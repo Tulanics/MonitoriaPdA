@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma</title>
+    <!-- <script src="script.js" defer></script> -->
+    <script>
+        function soma() {
+            var valor1 = parseFloat(
+                prompt("insira o primeiro valor para soma")
+                .replace(',', '.')
+                );
+            var valor2 = parseFloat(
+                prompt("insira o segundo valor para a soma")
+                .replace(',', '.')
+                );
+        
+            resultado = (valor1 + valor2)
+
+            return exibir(resultado)
+        }
+
+        function exibir(soma) {
+            alert(soma);
+        }
+        
+    </script>
+</head>
+<body onload="soma()">
+</body>
+</html>

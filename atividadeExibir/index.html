@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Nome</title>
+    <!-- <script src="script.js" defer></script> -->
+    <script>
+        const nome = prompt("Informe seu nome completo, por favor: ");
+
+        function retornaNomeCompleto() {
+                   
+            if(/[A-Z]/.test(nome))
+                return nome
+            else
+                return prompt("Informe um nome válido, por favor: ");           
+
+        }
+
+        function tamanhoDoNome(nome) { 
+            return nome.length.toString();
+        }
+
+
+        function escreverNaTela(nome, tamanho) {
+            document.write(`<p>${nome} =: ${tamanho}</p>`);
+        }
+
+
+        window.onload = function() {
+            const nome = retornaNomeCompleto();
+            const tamanho = tamanhoDoNome(nome);
+            escreverNaTela(nome, tamanho);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
